@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'IBM Plex Mono', 'Fira Mono', 'Menlo', monospace;
+  background: #fff;
+  color: #222;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.series-list {
+  font-size: 3rem;
+  font-family: inherit;
+  letter-spacing: 0.05em;
+  line-height: 1.1;
+  margin-bottom: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 0.2em;
+}
+
+.series-list .dot {
+  color: #ff4d4d;
+  margin: 0 0.1em;
+  font-size: 1.2em;
+  vertical-align: middle;
+}
+
+.series-list .dot.last {
+  margin-right: 0;
+}
+
+.gallery {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.art-card {
+  background: #fff5f5;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+  width: 350px;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.art-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.art3-bg {
+  background-image: url('imagess/Screenshot 2025-12-12 at 5.39.13 PM.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 350px;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+  position: relative;
+  overflow: hidden;
+  background-color: #fff5f5;
+}
+
+.art3-label {
+  color: #222;
+  font-size: 3.5rem;
+  font-family: 'Pacifico', 'Brush Script MT', cursive, 'Comic Sans MS', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  text-shadow: 0 2px 8px rgba(255,255,255,0.2);
+}
+
+.art-desc {
+  font-size: 1.1rem;
+  color: #444;
+  text-align: center;
+  margin: 18px 0 36px 0;
+  font-family: inherit;
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .series-list {
+    font-size: 2rem;
+  }
+  .gallery {
+    gap: 20px;
+  }
+  .art-card {
+    width: 90vw;
+    max-width: 350px;
+    height: 200px;
+  }
+}
